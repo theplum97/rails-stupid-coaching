@@ -1,0 +1,15 @@
+<div class="background">
+  <div id="answer-box">
+    <p><%= params[:question] %></p>
+    <p id="who">-You</p>
+  </div>
+
+  <br>
+
+  <div id="answer-box">
+    <p id="coach-answer"><%= @answer %></p>
+    <p id="who">-Coach</p>
+  </div>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>
